@@ -2,7 +2,7 @@
 
 ## **O desafio**
 
-Desenvolver uma API em PHP “puro” (Permitido microframeworks como Slim, Lumen e etc..) e Banco de Dados (relacional).
+Desenvolver uma API em PHP “puro” (Permitido micro-frameworks como Slim, Lumen e etc..) e Banco de Dados (relacional).
   
 ---
 
