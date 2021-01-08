@@ -1,62 +1,31 @@
 # Vaga de Back-End na 2SOW
 
-## **O desafio**
+## Projeto:
 
-Desenvolver uma API em PHP “puro” (Permitido micro-frameworks como Slim, Lumen e etc..) e Banco de Dados (relacional).
-  
----
+Desenvolvimento de API em PHP para manipular dados de cidadão.
+ 
+## Requisitos:
 
-## História de usuário
+- Permitir inserir, atualizar e deletar dados de cidadão com: nome, sobrenome, cpf, contatos (email e celular), endereço (cep, logradouro, bairro, cidade e uf);
+- Permitir consultar todos os cidadãos em ordem alfabética crescente (sem filtro);
+- Permitir consultar um cidadão pelo CPF;
+- Não permitir cadastrar cidadão com o mesmo CPF;
+- Permitir que a inserção também seja feita através da Linha de Comando;
+- Com o CEP as informações de logradouro, bairro, cidade e uf devem ser buscadas no ViaCEP: https://viacep.com.br/ws/01001000/json/
+ 
+## Considerações:
 
-Eu como gerente do restaurante de Santa Bárbara d’Oeste gostaria de cadastrar todos os clientes que fazem pedidos para entrega.
-
----
-
-## Requisitos
-
-- Gravar cliente (CPF/CNPJ deve ser único);
-- Quando for pessoa física deve preencher CPF e quando for jurídica CNPJ;
-- Consultar cliente;
-- Editar cliente;
-- Deletar cliente;
-
----
-
-## Exemplo de cenário de validação
-
-```
-DADO QUE o cliente com CPF “123456789” já está cadastrado
-QUANDO eu tentar cadastrar o cliente com CPF “123456789”
-ENTÃO deve exibir uma mensagem que o cliente já está cadastrado
-E não deve ser executado o cadastro
-```
-
----
-
-## Dados do Cliente
-
-- ID
-- Nome
-- Tipo Pessoa (Física ou Jurídica)
-- CPF/CNPJ
-- Contatos
-    - Telefone
-    - Email
-    - Celular
-
-Obs: O Cliente pode ter 0..N Contatos
-
----
-
-## Observações
-
-- Adicionar instruções para instalação e configuração da aplicação;
-
+- A API pode ser REST ou GraphQL (Trafegar JSON);
+- A escolha do armazenamento dos dados e a utilização (ou não) de frameworks ficam a critério do avaliado. Descrever o porquê da decisão;
+- Incluir documentação de como utilizar a API;
+- Incluir testes (opcional);
+ 
 ## O que será avaliado?
 
-- Qualidade de código;
-- Utilização das características mais recentes das ferramentas;
-- Forma com que a solução foi criada;
+- Qualidade de código e conhecimento em OOP;
+- Boas práticas de desenvolvimento;
+- Capacidade de solução de problemas;
+
 
 ## Envio
 
